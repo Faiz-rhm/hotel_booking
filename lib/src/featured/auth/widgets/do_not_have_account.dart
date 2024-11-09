@@ -30,7 +30,7 @@ class DoNotHaveAccount extends StatelessWidget {
             color: AppColors.primaryColor,
             fontWeight: FontWeight.w600
           ),),
-          onPressed: () => context.pushNamed(Routes.registerScreenRoute)
+          onPressed: (){}
         )
       ],
     );
