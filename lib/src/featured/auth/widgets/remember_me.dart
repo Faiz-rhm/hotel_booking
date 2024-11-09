@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hotel_booking/src/helper/extension/build_context_extension.dart';
 
-import '../../../config/route/routes.dart';
+import '../../../route/routes.dart';
 
 import '../../../helper/constants/app_colors.dart';
 
