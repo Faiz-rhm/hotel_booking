@@ -7,8 +7,10 @@ class AppAssets {
   static const String onboarding2 = 'assets/images/onboarding2.jpg';
   static const String onboarding3 = 'assets/images/onboarding3.jpg';
 
-
-  static const String payment = 'assets/images/payment.png';
+  static const String google = 'assets/svg/google.svg';
+  static const String facebook = 'assets/svg/facebook.svg';
+  static const String apple = 'assets/svg/apple.svg';
+  static const String success = 'assets/svg/success.svg';
 
   static const String premium = 'assets/images/brand/premium.png';
 
@@ -16,10 +18,6 @@ class AppAssets {
   static const String fire = 'assets/icons/product/fire.png';
   static const String flower = 'assets/icons/product/flower.png';
   static const String star = 'assets/icons/product/star.png';
-
-  static const String google = 'assets/images/social/google.png';
-  static const String facebook = 'assets/images/social/facebook.png';
-  static const String apple = 'assets/images/social/apple.png';
 
   static const String peter = 'assets/images/reviews/peter_parker.png';
   static const String stephen = 'assets/images/reviews/stephen_strange.png';
