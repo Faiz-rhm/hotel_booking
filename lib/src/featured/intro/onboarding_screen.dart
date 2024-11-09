@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hotel_booking/src/featured/auth/widgets/do_not_have_account.dart';
 import 'package:hotel_booking/src/helper/extension/build_context_extension.dart';
 
 import '../../helper/constants/app_style.dart';
@@ -66,36 +67,38 @@ class OnboardingScreen extends ConsumerWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  IntroDescription(item: onboardingData[introPage]),
+                 IntroDescription(item: onboardingData[introPage]),
 
                   Insets.gapH45,
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ...List.generate(onboardingData.length, (index) {
-                        return OnboardingAnimatedContainer(
-                        index: index,
-                          introPage: introPage
-                        );
-                      }),
-                    ],
-                  ),
+                  if (introPage != 2) ...[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ...List.generate(onboardingData.length, (index) {
+                          return OnboardingAnimatedContainer(
+                          index: index,
+                            introPage: introPage
+                          );
+                        }),
+                      ],
+                    ),
 
-                  Insets.gapH45,
+                    Insets.gapH45,
+                  ],
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Expanded(
-                          child: CustomButton.primary(
-                            onTab: () {},
-                            text: 'Continue',
-                          ),
+                        CustomButton.primary(
+                          onTab: () => _gotoPage(introPage + 1),
+                          text: 'Continue',
                         ),
+
+                        if (introPage == 2) const DoNotHaveAccount()
                       ],
                     ),
                   ),
