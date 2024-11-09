@@ -3,8 +3,11 @@ import 'package:flutter/foundation.dart';
 @immutable
 class AppAssets {
   static const String logo = 'assets/images/logo.png';
-  static const String splash_light = 'assets/images/splash_light.png';
-  static const String splash_dark = 'assets/images/splash_dark.png';
+  static const String onboarding1 = 'assets/images/onboarding1.jpg';
+  static const String onboarding2 = 'assets/images/onboarding2.jpg';
+  static const String onboarding3 = 'assets/images/onboarding3.jpg';
+
+
   static const String payment = 'assets/images/payment.png';
 
   static const String premium = 'assets/images/brand/premium.png';
