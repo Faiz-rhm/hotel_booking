@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../featured/intro/intro_screen.dart';
+import '../featured/intro/onboarding_screen.dart';
+
 import 'routes.dart';
 
 
@@ -17,12 +18,12 @@ final globalGoRouteProvider = Provider<GoRouter>((ref) {
       GoRoute(
         name: Routes.initialRoute,
         path: '/',
-        builder: (context, state) => IntroScreen(),
+        builder: (context, state) => OnboardingScreen(),
         routes: <RouteBase>[
           GoRoute(
             name: Routes.introScreenRoute,
             path: Routes.introScreenRoute,
-            builder: (BuildContext context, GoRouterState state) => IntroScreen(),
+            builder: (BuildContext context, GoRouterState state) => OnboardingScreen(),
           ),
         ],
       ),

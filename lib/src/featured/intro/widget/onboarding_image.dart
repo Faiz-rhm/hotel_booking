@@ -1,32 +1,25 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:hotel_booking/src/helper/extension/build_context_extension.dart';
 
-// class OnboardingImage extends StatelessWidget {
-//   const OnboardingImage({
-//     super.key,
-//     required this.image,
-//   });
+class OnboardingImage extends StatelessWidget {
+  const OnboardingImage({
+    super.key,
+    required this.image,
+  });
 
-//   final String image;
+  final String image;
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return ShapeOfView(
-//       shape: ArcShape(
-//         direction: ArcDirection.Inside,
-//         height: 30,
-//         position: ArcPosition.Bottom
-//       ),
-//       elevation: 0,
-//       child: Container(
-//         width: double.infinity,
-//         height: context.height * 0.6,
-//         decoration: BoxDecoration(
-//           image: DecorationImage(
-//             image: AssetImage(image),
-//             fit: BoxFit.cover
-//           )
-//         ),
-//       ),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: context.height * 0.8,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(image),
+          fit: BoxFit.fitHeight
+        )
+      ),
+    );
+  }
+}

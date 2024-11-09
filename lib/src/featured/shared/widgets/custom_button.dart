@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hotel_booking/src/helper/extension/build_context_extension.dart';
 
 import '../../../helper/constants/app_colors.dart';
+import 'app_text_style.dart';
 
 class CustomButton extends StatelessWidget {
   final Function() onTab;
@@ -53,7 +54,7 @@ class CustomButton extends StatelessWidget {
     return MaterialButton(
       elevation: 0,
       highlightElevation: 0,
-      height: context.isPhone ? 50 : 60,
+      height: context.isPhone ? 56 : 60,
       color: background,
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 32),
       shape: RoundedRectangleBorder(
@@ -64,10 +65,11 @@ class CustomButton extends StatelessWidget {
       splashColor: splashColor.withOpacity(0.7),
       hoverColor: splashColor.withAlpha(100),
       highlightColor: splashColor.withOpacity(0.1),
-      child: Text(text, style: context.theme.textTheme.bodyLarge!.copyWith(
-        color: textColor,
-        fontSize: context.isPhone ? 16 : 18,
-        fontWeight: FontWeight.w500),),
+      child: Text(text, style: CustomTextStyle.medium(
+        size: 16,
+        color: Colors.white,
+        fontWeight: FontWeight.w600
+      ), textAlign: TextAlign.center,),
     );
   }
 }

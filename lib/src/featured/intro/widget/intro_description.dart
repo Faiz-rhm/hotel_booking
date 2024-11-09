@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/src/helper/extension/build_context_extension.dart';
 
 import '../../../helper/constants/app_colors.dart';
 import '../../../helper/constants/app_style.dart';
+
+import '../../shared/widgets/app_text_style.dart';
 
 import '../model/intro_model.dart';
 
@@ -16,23 +17,24 @@ class IntroDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        context.isPhone ? Insets.gapH45 : Insets.gapH60,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 64),
+      child: Column(
+        children: [
+          Text(item.title, style: CustomTextStyle.bold(
+            size: 24,
+            color: Colors.white,
+            fontWeight: FontWeight.w700
+          ), textAlign: TextAlign.center,),
 
-        Text(item.title, style: context.theme.textTheme.headlineSmall!.copyWith(
-          fontSize: context.isPhone ? 28 : 32,
-          fontWeight: FontWeight.w700),
-          textAlign: TextAlign.center),
+          Insets.gapH15,
 
-        Insets.gapH15,
-
-        Text(item.description, style: context.theme.textTheme.bodyLarge!.copyWith(
-          fontSize: context.isPhone ? 16 : 18,
-        ),
-          textAlign: TextAlign.center,),
-      ],
+          Text(item.description, style: CustomTextStyle.regular(
+            size: 15,
+            color: AppColors.gray30
+          ), textAlign: TextAlign.center,),
+        ],
+      ),
     );
   }
 }
