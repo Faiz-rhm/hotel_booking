@@ -64,7 +64,7 @@ class CustomTextField extends StatefulWidget {
     this.fillColor,
     this.hintStyle = const TextStyle(
       fontSize: 14,
-      color: AppColors.textGreyColor,
+      // color: AppColors.textGreyColor,
       fontWeight: FontWeight.w400
     ),
     this.errorStyle = const TextStyle(
@@ -72,7 +72,7 @@ class CustomTextField extends StatefulWidget {
     ),
     this.inputStyle = const TextStyle(
       fontSize: 14,
-      color: AppColors.textGreyColor,
+      // color: AppColors.textGreyColor,
       fontWeight: FontWeight.w400
     ),
     this.contentPadding = const EdgeInsets.all(0),
@@ -183,13 +183,13 @@ class _CustomTextFieldState extends State<CustomTextField> {
           textInputAction: widget.textInputAction ?? (widget.multiline ? TextInputAction.newline : null),
           style: context.isPhone ? widget.inputStyle : const TextStyle(
             fontSize: 16,
-            color: AppColors.textGreyColor,
+            // color: AppColors.textGreyColor,
             fontWeight: FontWeight.w400
           ),
           showCursor: widget.showCursor,
           maxLengthEnforcement: MaxLengthEnforcement.enforced,
           autovalidateMode: AutovalidateMode.disabled,
-          cursorColor: AppColors.textGreyColor,
+          // cursorColor: AppColors.textGreyColor,
           obscureText: isPasswordField && hidePassword,
           validator: _runValidator,
           onFieldSubmitted: _runValidator,
@@ -200,7 +200,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             hintText: widget.hintText,
             hintStyle: context.isPhone ? widget.hintStyle : const TextStyle(
               fontSize: 16,
-              color: AppColors.textGreyColor,
+              // color: AppColors.textGreyColor,
               fontWeight: FontWeight.w400
             ),
             errorStyle: widget.errorStyle,

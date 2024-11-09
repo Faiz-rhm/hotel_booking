@@ -45,7 +45,7 @@ class ForgotPasswordWidget extends ConsumerWidget {
 
             Insets.gapH5,
 
-            Text('Enter your E-mail address to recover your password.', style: context.theme.textTheme.bodyMedium!.copyWith(color: AppColors.brandGray400), textAlign: TextAlign.left,),
+            Text('Enter your E-mail address to recover your password.', style: context.theme.textTheme.bodyMedium!.copyWith(), textAlign: TextAlign.left,),
 
             Insets.gapH30,
 

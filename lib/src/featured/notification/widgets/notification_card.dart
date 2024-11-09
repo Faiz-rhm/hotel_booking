@@ -52,7 +52,7 @@ class NotificationCard extends StatelessWidget {
                 padding: const EdgeInsets.all(12),
                 margin: const EdgeInsets.only(left: 0),
                 decoration: BoxDecoration(
-                  color: hexToColor(notification.color),
+                  // color: hexToColor(notification.color),
                   borderRadius: BorderRadius.circular(16)
                 ),
                 // child: Icon(checkIcon(type: notification.type), color: Colors.white,),

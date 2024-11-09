@@ -47,7 +47,7 @@ class VerificationMethodScreen extends ConsumerWidget {
 
                 Insets.gapH5,
 
-                Text('We\'ll send you a verification code to reset your password', style: context.theme.textTheme.bodyMedium!.copyWith(color: AppColors.brandGray400), textAlign: TextAlign.left,),
+                Text('We\'ll send you a verification code to reset your password', style: context.theme.textTheme.bodyMedium!.copyWith(), textAlign: TextAlign.left,),
 
                 Insets.gapH30,
 

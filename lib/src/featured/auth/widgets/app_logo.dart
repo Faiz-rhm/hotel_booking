@@ -15,8 +15,7 @@ class AppLogo extends StatelessWidget {
       height: 110,
       width: 110,
       padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        color: context.isDarkMode ? AppColors.logoDarkBackgroundColor : AppColors.logoLightBackgroundColor,
+      decoration: const BoxDecoration(
         shape: BoxShape.circle
       ),
       // child: Image.asset(AppAssets.logo)

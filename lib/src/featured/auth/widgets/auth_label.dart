@@ -22,7 +22,7 @@ class AuthLabel extends StatelessWidget {
         Insets.gapH5,
 
         Text(subTitle,
-          style: context.theme.textTheme.bodyMedium!.copyWith(color: AppColors.brandGray400),
+          style: context.theme.textTheme.bodyMedium!.copyWith(),
           textAlign: TextAlign.center,
         ),
       ],

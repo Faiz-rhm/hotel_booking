@@ -28,7 +28,7 @@ class VerificationCard extends ConsumerWidget {
           borderRadius: BorderRadius.circular(16),
           side: BorderSide(color: item == language ? AppColors.primaryColor : context.theme.canvasColor)
         ),
-        leading: Icon(item['icon'], color: item == language ? AppColors.primaryColor : AppColors.brandGray400),
+        leading: Icon(item['icon'],),
         title: Text(item['option']!, style: context.theme.textTheme.labelLarge,),
         trailing: item == language ? const Padding(
           padding: EdgeInsets.only(right: 16),

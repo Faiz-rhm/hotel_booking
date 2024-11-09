@@ -30,7 +30,7 @@ class IntroDescription extends StatelessWidget {
 
         Text(item.description, style: context.theme.textTheme.bodyLarge!.copyWith(
           fontSize: context.isPhone ? 16 : 18,
-          color: AppColors.brandGray300),
+        ),
           textAlign: TextAlign.center,),
       ],
     );

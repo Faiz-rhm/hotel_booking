@@ -67,7 +67,7 @@ class AppUtils {
     Flushbar<void>(
       message: message,
       messageSize: 15,
-      messageColor: AppColors.textWhite80Color,
+      // messageColor: AppColors.textWhite80Color,
       borderRadius: Corners.rounded9,
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),

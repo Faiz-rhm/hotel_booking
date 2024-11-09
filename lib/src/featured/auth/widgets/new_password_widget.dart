@@ -44,7 +44,7 @@ class NewPasswordWidget extends ConsumerWidget {
 
             Text('Set new password', style: context.theme.textTheme.headlineSmall, textAlign: TextAlign.left,),
 
-            Text('Your new password must be different from previously used passwords.', style: context.theme.textTheme.bodyMedium!.copyWith(color: AppColors.brandGray400), textAlign: TextAlign.left,),
+            Text('Your new password must be different from previously used passwords.', style: context.theme.textTheme.bodyMedium!.copyWith(), textAlign: TextAlign.left,),
 
             Insets.gapH30,
 

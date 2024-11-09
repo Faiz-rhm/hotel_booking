@@ -20,7 +20,7 @@ class NotificationScreen extends ConsumerWidget {
         actions: [
           TapScreenAppBarIcon(
             onTap: () {},
-            icon: Icon(Icons.more_vert, color: AppColors.brandGray400, size: context.isPhone ? 18 : 20,),
+            icon: Icon(Icons.more_vert, size: context.isPhone ? 18 : 20,),
           ),
           Insets.gapW15,
         ],
@@ -34,7 +34,7 @@ class NotificationScreen extends ConsumerWidget {
         itemCount: 10,
         itemBuilder: ((context, index) {
           return null;
-        
+
           // final notification = notificationData[index];
 
           // return NotificationCard(

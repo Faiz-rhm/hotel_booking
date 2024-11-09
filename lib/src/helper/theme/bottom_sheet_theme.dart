@@ -12,14 +12,3 @@ const BottomSheetThemeData appMaterialLightBottomSheetThemeData =  BottomSheetTh
     )
   )
 );
-
-BottomSheetThemeData appMaterialDarkBottomSheetThemeData = BottomSheetThemeData(
-  backgroundColor: AppColors.cardDarkBackgroundColor ,
-  modalBackgroundColor: AppColors.cardDarkBackgroundColor,
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      topLeft: Radius.circular(16),
-      topRight: Radius.circular(16)
-    )
-  ),
-);

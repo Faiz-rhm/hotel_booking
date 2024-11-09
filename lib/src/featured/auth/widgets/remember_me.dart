@@ -32,7 +32,7 @@ class RememberMe extends StatelessWidget {
               return SwitchListTile.adaptive(
                 activeColor: Platform.isAndroid ? Colors.white : AppColors.primaryColor,
                 title: Text('Remember me', style: context.theme.textTheme.bodyMedium!.copyWith(
-                  color: AppColors.brandGray400,
+
                 )),
                 value: rememberMe.value,
                 onChanged: (value) => rememberMe.value = value,

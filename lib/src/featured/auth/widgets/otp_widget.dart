@@ -36,7 +36,6 @@ class OTPWidget extends ConsumerWidget {
     final defaultPinTheme = PinTheme(
       width: 56,
       height: 56,
-      textStyle: const TextStyle(fontSize: 16, color: AppColors.textGreyColor, fontWeight: FontWeight.w400),
       decoration: BoxDecoration(
         color: context.theme.cardColor,
         borderRadius: BorderRadius.circular(8),
@@ -54,7 +53,7 @@ class OTPWidget extends ConsumerWidget {
               children: [
                 Text('Verification Code', style: context.theme.textTheme.headlineSmall, textAlign: TextAlign.left,),
 
-                Text('We have send the code verification to', style: context.theme.textTheme.bodyMedium!.copyWith(color: AppColors.brandGray400), textAlign: TextAlign.left,),
+                Text('We have send the code verification to', style: context.theme.textTheme.bodyMedium!.copyWith(), textAlign: TextAlign.left,),
 
                 Row(
                   children: [
@@ -91,10 +90,10 @@ class OTPWidget extends ConsumerWidget {
 
                 Align(
                   alignment: Alignment.center,
-                  child: RichText(text: TextSpan(
+                  child: RichText(text: const TextSpan(
                     text: 'Resend code after ',
-                    style: TextStyle(color: AppColors.brandGray300, fontSize: 15, letterSpacing: 1),
-                    children: const [
+                    style: TextStyle( fontSize: 15, letterSpacing: 1),
+                    children: [
                       TextSpan(
                         text: ' 40.00',
                         style: TextStyle(color: AppColors.primaryColor, fontWeight: FontWeight.w500, fontSize: 15, letterSpacing: 1)
